@@ -1,9 +1,9 @@
 {
-  "id": "notes-calendar",
-  "name": "Notes Calendar",
-  "version": "1.0.1",
+  "id": "on-this-day",
+  "name": "On This Day",
+  "version": "1.0.0",
   "minAppVersion": "1.0.0",
-  "description": "Browse your notes on a calendar. Every note appears on the day you created it — like a Daily Note setup, but automatic.",
+  "description": "Browse your notes on a calendar. Every note appears on the day you created it, like a Daily Note setup but automatic.",
   "author": "yaye.work",
   "authorUrl": "https://yaye.work",
   "isDesktopOnly": false

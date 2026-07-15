@@ -2,7 +2,7 @@
 
 const { Plugin, ItemView } = require('obsidian');
 
-const VIEW_TYPE = 'notes-calendar-view';
+const VIEW_TYPE = 'on-this-day-view';
 const MAX_DOTS = 5;
 const ICON_PREV = '<svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4813 18.3159L9.81543 12.65L15.4813 6.98413" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const ICON_NEXT = '<svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.81534 6.98413L15.4812 12.65L9.81534 18.3159" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -28,7 +28,7 @@ class CreationCalendarView extends ItemView {
   }
 
   getViewType() { return VIEW_TYPE; }
-  getDisplayText() { return 'Notes calendar'; }
+  getDisplayText() { return 'On This Day'; }
   getIcon() { return 'calendar-days'; }
 
   async onOpen() {
@@ -243,10 +243,10 @@ module.exports = class CreationCalendarPlugin extends Plugin {
   async onload() {
     this.registerView(VIEW_TYPE, (leaf) => new CreationCalendarView(leaf, this));
 
-    this.addRibbonIcon('calendar-days', 'Open notes calendar', () => this.activateView());
+    this.addRibbonIcon('calendar-days', 'Open On This Day', () => this.activateView());
     this.addCommand({
-      id: 'open-notes-calendar',
-      name: 'Open notes calendar',
+      id: 'open-on-this-day',
+      name: 'Open On This Day',
       callback: () => this.activateView(),
     });
 
