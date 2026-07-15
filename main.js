@@ -4,6 +4,8 @@ const { Plugin, ItemView } = require('obsidian');
 
 const VIEW_TYPE = 'notes-calendar-view';
 const MAX_DOTS = 5;
+const ICON_PREV = '<svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4813 18.3159L9.81543 12.65L15.4813 6.98413" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const ICON_NEXT = '<svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.81534 6.98413L15.4812 12.65L9.81534 18.3159" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 // count at which the day background reaches full saturation
 const SATURATION_CAP = 8;
 
@@ -51,7 +53,8 @@ class CreationCalendarView extends ItemView {
 
     // header with navigation
     const header = root.createDiv({ cls: 'cc-header' });
-    const prev = header.createEl('button', { text: '‹', cls: 'cc-nav' });
+    const prev = header.createEl('button', { cls: 'cc-nav' });
+    prev.innerHTML = ICON_PREV;
     const isYear = this.mode === 'year';
     const title = header.createDiv({
       cls: 'cc-title',
@@ -59,7 +62,8 @@ class CreationCalendarView extends ItemView {
         ? String(this.year)
         : new Date(this.year, this.month).toLocaleString('default', { month: 'long', year: 'numeric' }),
     });
-    const next = header.createEl('button', { text: '›', cls: 'cc-nav' });
+    const next = header.createEl('button', { cls: 'cc-nav' });
+    next.innerHTML = ICON_NEXT;
     prev.onclick = () => (isYear ? this.shiftYear(-1) : this.shiftMonth(-1));
     next.onclick = () => (isYear ? this.shiftYear(1) : this.shiftMonth(1));
     title.onclick = () => {
