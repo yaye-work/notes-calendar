@@ -1,15 +1,15 @@
 # Notes Calendar
 
-**Browse your notes on a calendar.** Every note automatically appears on the day you created it — think of it as Steph Ango's Daily Note setup, but automatic and simplified. Now you can browse your whole vault through a calendar.
-
-No configuration, no daily-note template, no folders to set up. Install it, and your notes are already on the calendar.
+**Browse your notes on a calendar.** Every note automatically appears on the day you created it. Think of it as Steph Ango's Daily Note setup, but automatic and simplified. Now you can browse your whole vault through a calendar.
 
 ## Features
 
-- **A calendar of your notes.** Each day you created notes gets highlighted in your theme's accent color — light at first, and more saturated the more notes you made that day.
-- **Dots for a quick glance.** Every note adds a dot to its day (up to 5 overlapping dots), so busy days stand out instantly.
+- **A calendar of your notes.** Each day you created notes gets highlighted in your theme's accent color. Light at first, and more saturated the more notes you made that day.
+
 - **Click a day to see its notes.** Each note shows as a card with its title, a short preview of the text, its creation time, and any tags in the corner. Click a card to open the note.
+- 
 - **Month and year views.** Click the title to zoom out to a year at a glance, then click any month to dive back in. Step through months or years with the arrows.
+- 
 - **Matches your theme.** Colors follow your Obsidian accent color automatically, in both light and dark mode.
 
 ## Installing
