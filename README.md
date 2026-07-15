@@ -1,3 +1,4 @@
+<img alt="Screenshot 2026-07-16 at 2 11 04 AM" src="https://github.com/user-attachments/assets/5d6d33d2-3136-41a6-9c35-c057661973fb" />
 # Note Diary
 
 **Browse your notes on a calendar.** Every note automatically appears on the day you created it. Think of it as Steph Ango's Daily Note setup, but automatic and simplified. Now you can browse your whole vault through a calendar.
