@@ -123,9 +123,14 @@ class CreationCalendarView extends ItemView {
     if (this.selectedKey) {
       const files = index.get(this.selectedKey) || [];
       const panel = root.createDiv({ cls: 'cc-panel' });
-      panel.createDiv({
-        cls: 'cc-panel-title',
-        text: `${new Date(this.selectedKey + 'T00:00:00').toLocaleDateString('default', { weekday: 'long', month: 'long', day: 'numeric' })} — ${files.length} note${files.length === 1 ? '' : 's'}`,
+      const panelTitle = panel.createDiv({ cls: 'cc-panel-title' });
+      panelTitle.createSpan({
+        cls: 'cc-panel-date',
+        text: new Date(this.selectedKey + 'T00:00:00').toLocaleDateString('default', { weekday: 'long', month: 'long', day: 'numeric' }),
+      });
+      panelTitle.createSpan({
+        cls: 'cc-panel-count',
+        text: `${files.length} note${files.length === 1 ? '' : 's'}`,
       });
       if (files.length === 0) {
         panel.createDiv({ cls: 'cc-panel-empty', text: 'No notes created this day.' });

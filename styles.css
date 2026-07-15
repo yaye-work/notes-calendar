@@ -151,10 +151,20 @@
 }
 
 .cc-panel-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
   font-size: 0.85em;
   font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 6px;
+}
+
+.cc-panel-count {
+  flex-shrink: 0;
+  color: var(--text-faint);
+  font-weight: 500;
 }
 
 .cc-panel-empty {
@@ -166,7 +176,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 8px 10px;
+  padding: 15px 10px;
   margin-bottom: 6px;
   border-radius: 8px;
   border: 1px solid var(--background-modifier-border);
