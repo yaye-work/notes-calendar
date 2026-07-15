@@ -53,7 +53,7 @@ class CreationCalendarView extends ItemView {
 
     // header with navigation
     const header = root.createDiv({ cls: 'cc-header' });
-    const prev = header.createEl('button', { cls: 'cc-nav' });
+    const prev = header.createDiv({ cls: 'cc-nav' });
     prev.innerHTML = ICON_PREV;
     const isYear = this.mode === 'year';
     const title = header.createDiv({
@@ -62,7 +62,7 @@ class CreationCalendarView extends ItemView {
         ? String(this.year)
         : new Date(this.year, this.month).toLocaleString('default', { month: 'long', year: 'numeric' }),
     });
-    const next = header.createEl('button', { cls: 'cc-nav' });
+    const next = header.createDiv({ cls: 'cc-nav' });
     next.innerHTML = ICON_NEXT;
     prev.onclick = () => (isYear ? this.shiftYear(-1) : this.shiftMonth(-1));
     next.onclick = () => (isYear ? this.shiftYear(1) : this.shiftMonth(1));
