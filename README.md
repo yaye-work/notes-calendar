@@ -1,4 +1,4 @@
-# On This Day
+# Note Diary
 
 **Browse your notes on a calendar.** Every note automatically appears on the day you created it. Think of it as Steph Ango's Daily Note setup, but automatic and simplified. Now you can browse your whole vault through a calendar.
 
@@ -13,12 +13,12 @@
 ## Installing
 
 1. Open **Settings → Community plugins** and make sure Community plugins are enabled.
-2. Search for **On This Day**, install, and enable it.
-3. Open it from the calendar icon in the left ribbon, or run **Open On This Day** from the command palette.
+2. Search for **Note Diary**, install, and enable it.
+3. Open it from the calendar icon in the left ribbon, or run **Open Note Diary** from the command palette.
 
 ### Manual install
 
-Copy `main.js`, `manifest.json`, and `styles.css` into your vault at `.obsidian/plugins/on-this-day/`, then enable the plugin in Settings.
+Copy `main.js`, `manifest.json`, and `styles.css` into your vault at `.obsidian/plugins/note-diary/`, then enable the plugin in Settings.
 
 ## A note on dates
 
@@ -26,9 +26,9 @@ Notes are placed by their file creation date. If you sync or copy notes onto a n
 
 ## Feedback & Support
 
-Thank you for using On This Day! If you run into a bug or have an idea, please open an issue. Feature requests and bug reports are very welcome.
+Thank you for using Note Diary! If you run into a bug or have an idea, please open an issue. Feature requests and bug reports are very welcome.
 
-And if you find  On This Day useful, you can:
+And if you find  Note Diary useful, you can:
 
 [<img width=auto height="70" alt="buymea bubbletea" src="https://github.com/user-attachments/assets/0f9d8765-d124-4e63-8668-bf06100b7c0a" />](https://buymeacoffee.com/yaye.work)
 
