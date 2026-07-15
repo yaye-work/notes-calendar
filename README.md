@@ -24,7 +24,7 @@ Copy `main.js`, `manifest.json`, and `styles.css` into your vault at `.obsidian/
 
 ## A note on dates
 
-Notes are placed by their file creation date. If you sync or copy notes onto a new machine, some systems reset that date to when the file arrived — so older notes may cluster on the day you set up your vault.
+Notes are placed by their file creation date. If you sync or copy notes onto a new machine, some systems reset that date to when the file arrived. So older notes may cluster on the day you set up your vault.
 
 ## Feedback & Support
 
