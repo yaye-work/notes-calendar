@@ -19,6 +19,7 @@
   border: none;
   box-shadow: none;
   padding: 2px 6px;
+  border-radius: 6px;
   cursor: pointer;
   color: var(--text-faint);
   display: flex;
@@ -29,6 +30,8 @@
   height: 20px;
 }
 .cc-nav:hover {
+  box-shadow: none;
+  background: var(--background-modifier-hover);
   color: var(--text-muted);
 }
 
